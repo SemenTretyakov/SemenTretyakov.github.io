@@ -1,1 +1,1 @@
-https://SemenTretyakov.github.io/Taia-Vais-project/
+https://SemenTretyakov.github.io
