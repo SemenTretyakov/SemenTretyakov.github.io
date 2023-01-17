@@ -22,175 +22,184 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header" id="header">
-        <div class="container">
-            <div class="row justify-content-end">
-                <div class="col-xl-4 d-flex align-items-end">
-                    <div class="header__menu">
-                        <div class="menu__icon">
-                            <span></span>
+    <div class="wrapper-main">
+        <header class="header" id="header">
+            <div class="container">
+                <div class="row justify-content-end">
+                    <div class="col">
+                        <div class="header__menu d-flex flex-column align-items-end">
+                            <div class="menu__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <nav class="menu__body">
+                                <ul class="menu__list d-flex flex-column align-items-center justify-content-center">
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">
+                                            Войти / регистрация
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">
+                                            Личный кабинет
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">
+                                            Подписка
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link">
+                                            Обо мне
+                                        </a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a href="" class="menu__link menu__link_underlined">
+                                            Выйти
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
                         </div>
-                        <nav class="menu__body">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a href="" class="menu__link">
-                                        Войти / регистрация
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link">
-                                        Подписка
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-xl-7">
+                        <div class="offer">
+                            <h1 class="offer__title">
+                                TAIA VAIS
+                            </h1>
+                            <ul class="offer__items d-flex justify-content-between">
+                                <li class="offer__item">
+                                    <a href="#" class="offer__link">
                                         Обо мне
                                     </a>
                                 </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link">
-                                        Личный кабинет
+                                <li class="offer__item">
+                                    <a href="#" class="offer__link">
+                                        Подписки
                                     </a>
                                 </li>
-                                <li class="menu__item">
-                                    <a href="" class="menu__link menu__link_underlined">
-                                        Выйти
+                                <li class="offer__item">
+                                    <a href="#" class="offer__link">
+                                        Галерея
                                     </a>
                                 </li>
                             </ul>
-                        </nav>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-7">
-                    <div class="offer">
-                        <h1 class="offer__title">
-                            TAIA VAIS
-                        </h1>
-                        <ul class="offer__items">
-                            <li class="offer__item">
-                                <a href="#" class="offer__link">
-                                    Обо мне
-                                </a>
-                            </li>
-                            <li class="offer__item">
-                                <a href="#" class="offer__link">
-                                    Подписки
-                                </a>
-                            </li>
-                            <li class="offer__item">
-                                <a href="#" class="offer__link">
-                                    Галерея
-                                </a>
-                            </li>
-                        </ul>
+        </header>
+    
+        <section class="gallery" id="gallery">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2 class="section-title">
+                            Галерея
+                        </h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 hover-image-scale">
+                        <img src="/Project/assets/images/photo1.png" alt="" class="gallery__img hover-image-scale">
+                    </div>
+                    <div class="col-lg-3 hover-image-scale">
+                        <img src="/Project/assets/images/photo2.png" alt="" class="gallery__img hover-image-scale">
+                    </div>
+                    <div class="col-lg-3 hover-image-scale">
+                        <img src="/Project/assets/images/photo3.png" alt="" class="gallery__img hover-image-scale">
+                    </div>
+                    <div class="col-lg-3 hover-image-scale">
+                        <img src="/Project/assets/images/photo4.png" alt="" class="gallery__img hover-image-scale">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <a href="#popup-subscription" class="btn btn__gallery popup-link">
+                            показать ещё
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h2 class="section-title">
-                        Галерея
-                    </h2>
+        </section>
+    
+        <footer class="footer" id="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <p class="footer__requesite">
+                                поддержка: 8(800)000-00-00 ООО "Алгоритм АТ"<br>ИНН: 7707466511<br>ОГРН: 2227703960262<br>email: info@model.ru
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <p class="footer__text">
+                                Платеж защищен
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">
+                                        Политика конфедециальности
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">
+                                        Публичная офферта
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">
+                                        Правила предоставления услуг
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">
+                                        Отписаться
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">
+                                        Возврат средств
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="footer__info">
+                            Информационное агенство "ALGORITM INFO" № свидетельства - ИА № ФС 77 - 83984
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-xl-3">
-                    <img src="/Project/assets/images/photo1.png" alt="" class="gallery__img">
-                </div>
-                <div class="col-xl-3">
-                    <img src="/Project/assets/images/photo2.png" alt="" class="gallery__img">
-                </div>
-                <div class="col-xl-3">
-                    <img src="/Project/assets/images/photo3.png" alt="" class="gallery__img">
-                </div>
-                <div class="col-xl-3">
-                    <img src="/Project/assets/images/photo4.png" alt="" class="gallery__img">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <a href="#popup-subscription" class="btn btn__gallery">
-                        показать ещё
+        </footer>
+        <div class="popup-subscription" id="popup-subscription">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <a href="#" class="popup__close close-popup">
+                        <img src="/Project/assets/images/cross.svg" alt="close popup">
                     </a>
+                    <h3 class="popup__title">
+                        Подписка
+                    </h3>
+                    <p class="popup__text">
+                        После оформления данной подписки вы будете иметь доступ к эксклюзивной коллекции фотографий модели Taya Vais.
+                    </p>
+                    <button class="btn btn__popup-content">
+                        Оформить
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
-
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-4">
-                    <p class="footer__requesite">
-                        поддержка: 8(800)000-00-00 ООО "Алгоритм АТ"<br>ИНН: 7707466511<br>ОГРН: 2227703960262<br>email: info@model.ru
-                    </p>
-                </div>
-                <div class="col-xl-4">
-                    <p class="footer__text">
-                        Платеж защищен
-                    </p>
-                </div>
-                <div class="col-xl-4">
-                    <ul class="footer__list">
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                Политика конфедециальности
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                Публичная офферта
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                Правила предоставления услуг
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                Отписаться
-                            </a>
-                        </li>
-                        <li class="footer__item">
-                            <a href="#" class="footer__link">
-                                Возврат средств
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-6 mx-auto">
-                    <p class="footer__info">
-                        Информационное агенство "ALGORITM INFO" № свидетельства - ИА № ФС 77 - 83984
-                    </p>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- <div class="popup-subscription" id="popup-subscription">
-        <div class="popup__body">
-            <div class="popup__content">
-                <h3 class="popup__title">
-                    Подписка
-                </h3>
-                <p class="popup__text">
-                    После оформления данной подписки вы будете иметь доступ к эксклюзивной коллекции фотографий модели Taya Vais.
-                </p>
-                <button class="btn btn__popup-content">
-                    Оформить
-                </button>
-            </div>
-        </div>
-    </div> -->
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
