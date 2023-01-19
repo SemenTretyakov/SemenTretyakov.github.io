@@ -54,7 +54,7 @@ const lockPadding = document.querySelectorAll('.lock-padding');
 
 let unlock = true;
 
-const timeout = 800;
+const timeout = 600;
 
 if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
@@ -98,7 +98,7 @@ function popupClose(popupActive, doUnlock = true) {
 	if (unlock) {
 		popupActive.classList.remove('open');
 		if (doUnlock) {
-			bodyUlock();
+			bodyUnLock();
 		}
 	}
 }
@@ -123,7 +123,7 @@ function bodyLock() {
 
 function bodyUnLock() {
 	setTimeout(function () {
-		for (let index = 0; index <lockPadding.length; index++) {
+		for (let index = 0; index < lockPadding.length; index++) {
 			const el = lockPadding[index];
 			el.style.paddingRight = '0px';
 		}
