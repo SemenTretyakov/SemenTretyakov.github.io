@@ -60,9 +60,6 @@ a {
 /*  popup-subscription  */
 
 .popup-subscription {
-    position: fixed;
-    width: 100%;
-    height: 100%;
     background-color: rgba(16, 16, 16, 0.9);
     top: 0;
     left: 0;
@@ -83,65 +80,45 @@ a {
     opacity: 1;
 }
 
-.popup__body {
-    min-height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 .popup__close {
-    position: absolute;
     right: 45px;
     top: 30px;
     line-height: 0;
 }
 
 .popup__content {
-    width: 805px;
-    background: #FFFFFF;
     box-shadow: 0px 15px 50px rgba(232, 232, 232, 0.25);
-    padding: 157px 87px;
-    position: relative;
+    padding: 157px 87px;                                          /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
     opacity: 0;
 }
 
 .popup__title {
     font-family: 'Century Gothic';
-    font-weight: normal;
-    font-size: 60px;
-    color: #000000;
-    text-align: center;
-    padding-bottom: 40px;
+    font-size: 3.75rem;
+    padding-bottom: 40px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .popup__text {
     font-family: 'Helvetica';
     font-weight: normal;
-    font-size: 25px;
     text-align: center;
     letter-spacing: 0.05em;
     line-height: 1.4em; 
     text-align: center;
     width: 630px;
     text-transform: none;
-    margin: 0 auto;
-    color: #000000;
-    margin-bottom: 45px;
 }
 
 .popup__text::before {
     content: "";
     display: block;
     border-top: 8px solid #000000;
-    width: 100%;
     margin-bottom: 30px;
 }
 
 .btn__popup-content {
     border: 2px solid #000000;
-    color: #000000;
 }
 
 .btn__popup-content:hover {
@@ -165,11 +142,9 @@ a {
 }
 
 .menu__body {
-    position: absolute;
     top: 0;
     left: -100%;
     height: 100vh;
-    width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     transition: all 0.5s;
 }
@@ -179,18 +154,17 @@ a {
 }
 
 .menu__list {
-    padding-top: 80px;
-    gap: 30px;
-    height: 100%;
-    width: 100%;
+    padding-top: 80px; /*----------*/
+    gap: 30px; /*-------------------------*/
+    height: 100%; /*-------------------------*/
     background-color: rgba(0, 0, 0, 0.7);
     overflow: auto;
 }
 
 .menu__link {
     font-family: 'Helvetica';
-    font-size: 30px;
-    color: #FFFFFF;
+    font-size: 1.875rem;
+    color: #FFFFFF; /*!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     line-height: 1.4em;
     transition: all 0.5s ease;
 }
@@ -204,27 +178,27 @@ a {
 }
 
 .menu__link_underlined:hover {
-    text-decoration: none;
+    text-decoration: none; /*text-decoration-none*/
 }
 
 .menu__icon {
     display: block;
-    position: relative;
-    width: 41px;
-    height: 29px;
+    width: 41px; /* !!!!!!!!!!!!!!!!*/
+    height: 29px; /*!!!!!!!!!!*/
     cursor: pointer;
-    margin-top: 85px;
-    margin-bottom: 240px;
     z-index: 5;
 }
 
+.my-6 {
+    margin-top: 16rem!important; /*!!!!!!!!!!!!*/
+    margin-bottom: 21rem!important; /*!!!!!!!!!!!!!!!!*/
+}
+
+
 .menu__icon span {
-    position: absolute;
     top: calc(50% - 3px);
     left: 0;
-    width: 100%;
     height: 5px;
-    background-color: #fff;
     transition: all 0.3s;
     border-radius: 5px;
   }
@@ -252,30 +226,20 @@ a {
     bottom: calc(50% - 3px);
   }
 
-.offer {
-    padding-bottom: 426px;
-}
-
 .offer__title {
     font-family: 'Century Gothic';
     font-weight: 400;
-    font-size: 100px;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.offer__items {
-    margin-top: 50px;
+    font-size: 6.25rem;
 }
 
 .offer__link {
     font-family: 'Helvetica';
     font-weight: 400;
-    font-size: 39px;
+    font-size: 2.4375rem;
     line-height: 1.2em;
     transition: all 0.5s ease;
     border-bottom: 3px solid rgb(255, 255, 255, 0);
-    padding-bottom: 8px;
+    padding-bottom: 8px; /*!!!!!!!!!!!!!!!!!!!*/
 }
 
 .offer__link:hover {
@@ -285,55 +249,48 @@ a {
 
 /*  gallery  */
 
-.gallery {
+/* .gallery {
     margin-top: 120px;
-}
+} */
 
 .section-title {
-    text-align: center;
     font-family: 'Century Gothic';
-    font-weight: normal;
-    font-size: 70px;
+    font-size: 4.375rem;
     line-height: 120%;
-    margin-bottom: 72px;
+    margin-bottom: 72px;    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .hover-image-scale {
-    display: inline-block; 
+    display: inline-block;
     overflow: hidden;
 }
 .hover-image-scale img {
     transition: all 0.8s ease;
-    display: block; 
+    display: block;
 }
 .hover-image-scale img:hover {
    transform: scale(1.1);
 }
 
 .gallery__img {
-    width: 100%;
-    height: 100%;
     object-fit: contain;
 }
 
 .btn {
-    margin: 0 auto;
-    display: block;
-    padding: 24px 54px;
+    padding: 24px 54px;   /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     font-family: 'Century Gothic';
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     letter-spacing: 0.07em;
-    text-transform: uppercase;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0);  
     transition: all 0.5s ease;
+    border-radius: 0;
 }
 
 .btn__gallery {
-    margin-top: 45px;
-    border: 2px solid #FFFFFF;
-    color: #FFFFFF;
-    width: 282px;
+    margin-top: 45px;  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    border: 2px solid #FFFFFF; 
+    width: 282px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .btn__gallery:hover {
@@ -353,8 +310,8 @@ a {
 /*  footer  */
 
 .footer {
-    margin-top: 120px;
-    margin-bottom: 45px;
+    margin-top: 120px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    margin-bottom: 45px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .footer__wrapper::before {
@@ -362,57 +319,49 @@ a {
     display: block;
     border-top: 1px solid #FFFFFF;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 50px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .footer__wrapper::after {
     content: "";
     display: block;
     border-bottom: 1px solid #FFFFFF;
-    width: 100%;
-    margin-top: 50px;
+    margin-top: 50px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .footer__requesite {
-    font-size: 25px;
     line-height: 1.4em;
 }
 
 .footer__text {
-    font-size: 25px;
-    text-align: center;
     line-height: 1.4em;
 }
 
 .footer__link {
-    font-size: 21px;
-    padding-bottom: 5px;
+    font-size: 1.3125rem;
+    padding-bottom: 5px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     border-bottom: 1px solid rgb(255, 255, 255, 0);
     transition: all 0.5s ease;
 }
 
 .footer__link:hover {
-    font-size: 21px;
-    padding-bottom: 5px;
+    padding-bottom: 5px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     border-bottom: 1px solid rgb(255, 255, 255, 1);
 }
 
 .footer__item + .footer__item {
-    margin-top: 10px;
+    margin-top: 10px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .footer__info {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 20px;
-    max-width: 560px;
-    margin-top: 30px;
+    font-size: 1.25rem;
+    max-width: 560px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    margin-top: 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 /*  Responsive main */
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 	.footer__list {
         margin-top: 30px;
     }
@@ -454,24 +403,12 @@ a {
         font-size: 55px;
         margin-bottom: 40px;
     }
-}
-
-
-
-
-
+} */
 
 /*  about us  */
 
-.header__about {
+/* .header__about {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(85.29% 85.29% at 50.04% 50%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/images/about-bg.png) no-repeat center center / cover;
-    /* height: 100vh;
-    width: 100vw; */
-}
-
-.menu__icon {
-    margin-top: 45px;
-    margin-bottom: 220px;
 }
 
 .about__text {
@@ -496,11 +433,11 @@ a {
 
 .offer__about {
     padding-bottom: 170px;
-}
+} */
 
 /*  Responsive about */
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
 	.offer__title {
         font-size: 70px;
     }
@@ -530,7 +467,7 @@ a {
         border-top: 6px solid #ffffff;
         margin: 25px 0px;
     }
-}
+} */
 
 /* @media (max-width: 575px) {
     .offer__title {
@@ -553,68 +490,68 @@ a {
 
 .bread-crumbs__text {
     font-family: 'Helvetica';
-    font-weight: normal;
-    font-size: 12px;
+    font-weight: normal;  /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    font-size: 0.75rem;
     line-height: 1.1em;
     letter-spacing: 0.1em;
     text-transform: none;
-    margin-left: 6px;
+    margin-left: 6px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .bread-crumbs__text::before {
     content: "";
-    display: block;
+    display: block; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     border: 1px solid #FFFFFF;
-    width: 15px;
-    margin-right: 6px;
+    width: 15px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    margin-right: 6px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .secondary-title {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Helvetica';
-    font-weight: normal;
+    font-weight: normal; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     line-height: 135%;
     letter-spacing: 0.02em;
-    margin: 50px 0px;
+    margin: 50px 0px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .wrapper {
-    padding: 30px 0px 0px 30px;
-    display: block;
+    padding: 30px 0px 0px 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    display: block; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     background: rgba(255, 255, 255, 0.03);
     box-shadow: inset 0px 0px 68px rgba(255, 255, 255, 0.05), inset 0px 4px 4px rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(24px);
-    height: 190px;
+    height: 190px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .wrapper__text {
     font-family: 'Helvetica';
-    font-weight: normal;
-    font-size: 18px;
+    font-weight: normal; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    font-size: 1.125rem;
     line-height: 1.3em;
     letter-spacing: 0.02em;
     text-transform: none;
-    margin-left: 16px;
+    margin-left: 16px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .wrapper__info {
     font-family: 'Helvetica';
-    font-weight: normal;
-    font-size: 14px;
+    font-weight: normal; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    font-size: 0.875;
     line-height: 1.3em;
     letter-spacing: 0.02em;
-    text-transform: none;
+    text-transform: none; 
 }
 
 .wrapper__string + wrapper__string {
-    padding-top: 8px;
+    padding-top: 8px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
 
 .wrapper__info_dim {
-    margin-right: 5px;
+    margin-right: 5px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
     color: #969696;
 }
 
 .wrapper__content {
-    margin-top: 30px;
+    margin-top: 30px; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 }
