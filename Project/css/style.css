@@ -414,13 +414,12 @@ a {
 
 /*  about us  */
 
-/* .header__about {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(85.29% 85.29% at 50.04% 50%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/images/about-bg.png) no-repeat center center / cover;
+.header__about {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(85.29% 85.29% at 50.04% 50%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/images/about-bg.png) no-repeat top center / cover;
 }
 
 .about__text {
-    max-width: 1110px;
-    text-align: center;
     text-transform: none;
     letter-spacing: 0.05em;
     line-height: 1.4em;
@@ -433,65 +432,50 @@ a {
 .about__text::before {
     content: "";
     display: block;
-    border-top: 8px solid #ffffff;
+    border-top: 0.5rem solid #ffffff;
     width: 100%;
-    margin: 58px 0px;
+    margin: 3.625rem 0px;
 }
-
-.offer__about {
-    padding-bottom: 170px;
-} */
 
 /*  Responsive about */
 
-/* @media (max-width: 992px) {
+@media (max-width: 992px) {
 	.offer__title {
-        font-size: 70px;
+        font-size: 5rem;
     }
     .about__text {
-        font-size: 20px;
+        font-size: 1.375rem;
     }
     .about__text::before {
         border-top: 6px solid #ffffff;
-        margin: 25px 0px;
+        margin: 1.5625rem 0;
     }
-    .menu__icon {
-        margin-bottom: 80px;
-    }
-    .offer__about {
-        padding-bottom: 10px;
-    }
-} 
+}
 
 @media (max-width: 768px) {
-	.offer__title {
-        font-size: 60px;
+    .offer__title {
+        font-size: 4rem;
     }
     .about__text {
-        font-size: 17px;
+        font-size: 1.1875rem;
     }
     .about__text::before {
-        border-top: 6px solid #ffffff;
-        margin: 25px 0px;
+        border-top: 0.25rem solid #ffffff;
     }
-} */
+}
 
-/* @media (max-width: 575px) {
+@media (max-width: 575px) {
     .offer__title {
-        font-size: 40px;
+        font-size: 3rem;
     }
     .about__text {
-        font-size: 15px;
+        font-size: 1rem;
     }
     .about__text::before {
         border-top: 4px solid #ffffff;
-        margin: 25px 0px;
+        margin: 1rem 0;
     }
-    .offer__about {
-        padding-bottom: 140px;
-    }
-} */
-
+}
 
 /*  account  */
 
