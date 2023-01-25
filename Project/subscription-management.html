@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
+    <title>Управление подпиской</title>
     <meta name="description" content="Описание страницы сайта">
     <meta name="keywords" content="ключевые слова страницы">
     <!-- Favicon -->
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header__account" id="header__account">
+    <div class="wrapper-main">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col">
@@ -75,8 +75,11 @@
                             <img src="/Project/assets/images/home.svg" alt="home btn" class="bread-crumbs__home-desk">
                             <img src="/Project/assets/images/home-btn.svg" alt="home-btn__mobile" class="bread-crumbs__home-mob">
                         </a>
-                        <a href="#" class="bread-crumbs__text bread-crumbs__text_active d-flex align-items-center">
+                        <a href="account.html" class="bread-crumbs__text d-flex align-items-center">
                             Личный кабинет
+                        </a>
+                        <a href="#" class="bread-crumbs__text bread-crumbs__text_active d-flex align-items-center">
+                            Управление подпиской
                         </a>
                     </div>
                 </div>
@@ -85,7 +88,7 @@
             <div class="row">
                 <div class="col">
                     <h3 class="secondary-title font-weight-normal">
-                        Личный кабинет
+                        Управление подпиской
                     </h3>
                 </div>
             </div>
@@ -120,127 +123,112 @@
                                             sementr@mail.com
                                         </span>
                                     </div>
-                                    <div class="wrapper__edit">
-                                        <a href="" class="wrapper__edit-link">
-                                            <img src="/Project/assets/images/edit.svg" alt="" class="wrapper__edit-img">
-                                        </a>
-                                        <a href="#" class="wrapper__text wrapper__edit-text">
-                                            Выйти
-                                        </a>
-                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <a href="#" class="wrapper d-block">
-                        <div class="push-2"></div>
-                        <div class="wrapper__title d-flex align-items-center">
-                            <img src="/Project/assets/images/subscription.svg" alt="" class="wrapper__img">
-                            <h4 class="wrapper__text">
-                                Управление подпиской
-                            </h4>
+                <div class="col-lg-6 col-md-12 d-block">
+                    <div class="inner d-flex ms-5">
+                        <div class="column-titles">
+                            <p class="inner__text">
+                                Cтатус подписки
+                            </p>
+                            <p class="inner__text">
+                                Тип подписки
+                            </p>
+                            <p class="inner__text">
+                                Окончание
+                            </p>
                         </div>
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="favourites.html" class="wrapper d-block">
-                        <div class="push-2"></div>
-                        <div class="wrapper__title d-flex align-items-center">
-                            <img src="/Project/assets/images/favourites.svg" alt="" class="wrapper__img">
-                            <h4 class="wrapper__text">
-                                Избранное
-                            </h4>
-                        </div>
-                        <div class="push-1a8"></div>
-                        <div class="wrapper__string d-flex">
-                            <span class="wrapper__info wrapper__info_dim">
-                                Количество фото
-                            </span>
-                            <span class="wrapper__info">
-                                4
-                            </span>
-                        </div>
-                    </a>
-                </div>
-                <div class="push-1a9"></div>
-                <div class="col-lg-3 col-md-6">
-                    <a href="#" class="wrapper wrapper_mini d-block">
-                        <div class="push-2"></div>
-                        <div class="wrapper__title d-flex align-items-center">
-                            <img src="/Project/assets/images/password.svg" alt="" class="wrapper__img">
-                            <h4 class="wrapper__text">
-                                Изменить пароль
-                            </h4>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <div class="push-8"></div>
-
-    <footer class="footer" id="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="row justify-content-between">
-                    <div class="col-lg-4 col-md-6">
-                        <p class="footer__requesite">
-                            поддержка: 8(800)000-00-00 <br>ООО "Алгоритм АТ"<br>ИНН: 7707466511<br>ОГРН: 2227703960262<br>email: info@model.ru
-                        </p>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <p class="footer__text">
-                            Платеж защищен
-                        </p>
-                    </div>
-                    <div class="col-lg-5">
-                        <ul class="footer__list">
-                            <li class="footer__item">
-                                <a href="#" class="footer__link">
-                                    Политика конфедециальности
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <div class="push-1"></div>
-                                <a href="#" class="footer__link">
-                                    Публичная офферта
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <div class="push-1"></div>
-                                <a href="#" class="footer__link">
-                                    Правила предоставления услуг
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <div class="push-1"></div>
-                                <a href="#" class="footer__link">
-                                    Отписаться
-                                </a>
-                            </li>
-                            <li class="footer__item">
-                                <div class="push-1"></div>
-                                <a href="#" class="footer__link">
-                                    Возврат средств
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="column-answer d-flex flex-column align-items-center ms-5">
+                            <p class="inner__text">
+                                Не активна
+                            </p>
+                            <p class="inner__text">
+                                —
+                            </p>
+                            <p class="inner__text">
+                                —
+                            </p>
+                        </div>    
                     </div>
                 </div>
             </div>
-            <div class="push-2"></div>
+            <div class="push-4"></div>
             <div class="row">
                 <div class="col">
-                    <p class="footer__info d-block mx-auto text-center m-0">
-                        Информационное агенство "ALGORITM INFO" № свидетельства - ИА № ФС 77 - 83984
-                    </p>
+                    <h3 class="secondary-title font-weight-normal">
+                        Подписка
+                    </h3>
+                    <div class="push-2"></div>
+                    <a href="" class="btn btn__section btn__subscr text-white d-block text-uppercase">
+                        активировать подписку
+                    </a>
                 </div>
             </div>
+            <div class="push-8"></div>     
+            <footer class="footer" id="footer">
+                <div class="container">
+                    <div class="footer__wrapper">
+                        <div class="row justify-content-between">
+                            <div class="col-lg-4 col-md-6">
+                                <p class="footer__requesite">
+                                    поддержка: 8(800)000-00-00 <br>ООО "Алгоритм АТ"<br>ИНН: 7707466511<br>ОГРН: 2227703960262<br>email: info@model.ru
+                                </p>
+                            </div>
+                            <div class="col-lg-3 col-md-6">
+                                <p class="footer__text">
+                                    Платеж защищен
+                                </p>
+                            </div>
+                            <div class="col-lg-5">
+                                <ul class="footer__list">
+                                    <li class="footer__item">
+                                        <a href="#" class="footer__link">
+                                            Политика конфедециальности
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <div class="push-0-625"></div>
+                                        <a href="#" class="footer__link">
+                                            Публичная офферта
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <div class="push-0-625"></div>
+                                        <a href="#" class="footer__link">
+                                            Правила предоставления услуг
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <div class="push-0-625"></div>
+                                        <a href="#" class="footer__link">
+                                            Отписаться
+                                        </a>
+                                    </li>
+                                    <li class="footer__item">
+                                        <div class="push-0-625"></div>
+                                        <a href="#" class="footer__link">
+                                            Возврат средств
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="push-2"></div>
+                    <div class="row">
+                        <div class="col">
+                            <p class="footer__info d-block mx-auto text-center m-0">
+                                Информационное агенство "ALGORITM INFO" № свидетельства - ИА № ФС 77 - 83984
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="push-3"></div>
         </div>
-    </footer>
-    <div class="push-3"></div>
     <script src="js/main.js"></script>
 </body>
 </html>

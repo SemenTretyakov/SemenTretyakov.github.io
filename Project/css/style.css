@@ -594,19 +594,19 @@ a {
     right: 13%;
 }
 
-.btn__gallery {
+.btn__section {
     border: 2px solid #FFFFFF; 
     width: 17.625rem;
 }
 
-.btn__gallery:hover {
+.btn__section:hover {
     background-color: #ffffff;
     border: 2px solid rgba(255, 255, 255, 0);
     color: #000000!important;
     font-family: 'Century Gothic';
 }
 
-.btn__gallery:active {
+.btn__section:active {
     background-color: #000000;
     border: 2px solid rgba(255, 255, 255, 0);
     color: #ffffff;
@@ -1091,8 +1091,16 @@ a {
 
 /* *********************** */
 
-/*  Favourites  */
+/*  Subscription Management  */
 
-.gallery__img_favourites {
+.inner__text {
+    font-family: 'Helvetica';
+    font-size: 25px;
+    line-height: 1.35em;
+    letter-spacing: 0.05em;
+    text-transform: none;
+}
 
+.btn__subscr {
+    width: 26.625rem;
 }
