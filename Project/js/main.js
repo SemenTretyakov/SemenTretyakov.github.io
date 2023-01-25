@@ -72,7 +72,7 @@ if (popupCloseIcon.length > 0) {
 	for (let index = 0; index < popupCloseIcon.length; index++) {
 		const el = popupCloseIcon[index];
 		el.addEventListener("click", function (e) {
-			popupClose(el.closest('.popup-subscription'));
+			popupClose(el.closest('.popup'));
 			e.preventDefault();
 		});
 	}
@@ -90,7 +90,7 @@ function popupOpen(curentPopup) {
 	curentPopup.classList.add('open');
 	curentPopup.addEventListener("click", function (e) {
 		if (!e.target.closest('.popup__content')) {
-			popupClose(e.target.closest('.popup-subscription'));
+			popupClose(e.target.closest('.popup'));
 		}
 	})
 }
