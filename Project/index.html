@@ -35,7 +35,7 @@
                             <nav class="menu__body w-100 position-absolute">
                                 <ul class="menu__list vh-100 d-flex flex-column align-items-center justify-content-center w-100">
                                     <li class="menu__item">
-                                        <a href="" class="menu__link">
+                                        <a href="#" class="menu__link">
                                             Войти / регистрация
                                         </a>
                                     </li>
@@ -47,13 +47,13 @@
                                     </li>
                                     <li class="menu__item">
                                         <div class="push-2"></div>
-                                        <a href="#" class="menu__link">
+                                        <a href="subscription-management.html" class="menu__link">
                                             Подписка
                                         </a>
                                     </li>
                                     <li class="menu__item">
                                         <div class="push-2"></div>
-                                        <a href="#" class="menu__link">
+                                        <a href="about.html" class="menu__link">
                                             Обо мне
                                         </a>
                                     </li>
@@ -300,7 +300,7 @@
             </form>
         </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <form action="#" class="popup position-fixed" id="popup">
                 <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
                     <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
@@ -309,10 +309,10 @@
                         </a>
                         <div class="push-2-3"></div>
                         <div class="form__btns d-flex justify-content-between">
-                            <button class="form__btn form__btn_active w-50 p-0 font-weight-normal" type="button">
+                            <button class="form__btn w-50 p-0 font-weight-normal" type="button">
                                 Регистрация
                             </button>
-                            <button class="form__btn w-50 p-0 font-weight-normal" type="button">
+                            <button class="form__btn form__btn_active w-50 p-0 font-weight-normal" type="button">
                                 Войти
                             </button>
                         </div>
@@ -367,6 +367,116 @@
                             </div>
                             <div class="push-2-5"></div>
                         </div>
+                    </div>
+                </div>
+            </form>
+        </div> -->
+
+        <div class="row">
+            <form action="#" class="popup overflow-y-auto overflow-x-hidden position-fixed" id="popup">
+                <div class="popup__body d-flex align-items-center justify-content-center my-5">
+                    <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                        <a href="#" class="popup__close close-popup position-absolute">
+                            <img src="/Project/assets/images/cross.svg" alt="close popup">
+                        </a>
+                        <div class="push-2-3"></div>
+                        <div class="form__btns d-flex justify-content-between">
+                            <button class="form__btn form__btn_active w-50 p-0 font-weight-normal" type="button">
+                                Регистрация
+                            </button>
+                            <button class="form__btn w-50 p-0 font-weight-normal" type="button">
+                                Войти
+                            </button>
+                        </div>
+                        <div class="push-2"></div>
+                        <div class="popup__fields">
+                            <div class="fields">
+                                <div class="field">
+                                    <h4 class="field__title text-black font-weight-normal">
+                                        Имя
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="text" class="input py-3 ps-4 w-100" name="username" id="username">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__title text-black font-weight-normal">
+                                        Фамилия
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="text" class="input py-3 ps-4 w-100" name="usersurname" id="usersurname">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__title text-black font-weight-normal">
+                                        Номер телефона
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input placeholder="+7 (999) 999-99-99"  type="tel:+79999999999" class="input py-3 ps-4 w-100" name="usertel" id="usertel">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__title text-black font-weight-normal">
+                                        E-mail
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input placeholder="example@email.ru"  type="email" class="input py-3 ps-4 w-100" name="useremail" id="useremail">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__title text-black font-weight-normal">
+                                        Придумайте пароль
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="password" class="input input_pass w-100 ps-4" name="userpass" id="userpass">
+                                    <span class="pass__text pt-2">Минимум 10 символом</span>
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__title text-black font-weight-normal">
+                                        Введите пароль еще раз
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="password" class="input input_pass w-100 ps-4" name="userpass" id="userpass">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="push-2"></div>
+                        <h3 class="form__subtitle-btns text-black text-center m-0">
+                            или зарегистрируйтесь через...
+                        </h3>
+                        <div class="push-1-25"></div>
+                        <div class="form__btns d-flex justify-content-between">
+                            <button class="form__btn-social form__btn_google py-3 d-flex align-items-center justify-content-center" type="button">
+                                Google
+                            </button>
+                            <button class="form__btn-social form__btn_apple py-3 d-flex align-items-center justify-content-center" type="button">
+                                apple
+                            </button>
+                        </div>
+                        <div class="push-1a8"></div>
+                        <div class="checkbox">
+                            <div class="checkbox__inner d-flex align-items-center">
+                                <input type="checkbox" checked class="custom-checkbox" name="checkbox1" id="check1">
+                                <label for="check1"></label>
+                                <p class="checkbox__text text-black ps-3 m-0 w-75">
+                                    Согласен с <span class="checkbox__text checkbox__text_underlined">политикой конфиденциальности, правилами предоставления услуг, офертой.</span>
+                                </p>
+                            </div>
+                            <div class="push-1"></div>
+                            <div class="checkbox__inner d-flex align-items-center">
+                                <input type="checkbox" class="custom-checkbox" name="checkbox2" id="check2">
+                                <label for="check2"></label>
+                                <p class="checkbox__text text-black ps-3 m-0">
+                                    Согласен с правилами предоставления доступа к сервису по подписке с использованием автоплатежа и уведомлён о подключении платной подписки стоимостью 1 руб. за первые X дня (дней) доступа, далее с подключенной карты списывается N руб. за каждые XX дней использования.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="push-2-5"></div>
+                        <button class="form__main-btn bg-black text-white d-block text-center w-100 py-3 m-0 text-black font-weight-normal" type="button">
+                            зарегистрироваться
+                        </button>
+                        <div class="push-2-5"></div>
                     </div>
                 </div>
             </form>

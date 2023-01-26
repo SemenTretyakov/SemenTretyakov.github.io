@@ -963,7 +963,7 @@ a {
     }
 }
 
-/*  Popup registration  */
+/*  Popup login  */
 
 .form__btn {
     font-family: 'Helvetica';
@@ -1091,6 +1091,79 @@ a {
 
 /* *********************** */
 
+/*  Popup registration  */
+
+.pass__text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1rem;
+    line-height: 1.35em;
+    text-transform: none;
+    letter-spacing: 0.02em;
+    margin-top: 0.625rem;
+}
+
+.checkbox__text {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.35em;
+    letter-spacing: 0.02em;
+    text-transform: none;
+}
+
+.checkbox__text_underlined {
+    text-decoration-line: underline;
+}
+
+.checkbox__text_clean {
+    text-decoration: none;
+    color: #a5d702;
+}
+
+.custom-checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    border: 1px solid #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+ .custom-checkbox:checked+label::before {
+    border-color: #ffffff;
+    background-color: #000000;
+    background-image: url(../assets/images/arrow.svg);
+}
+.custom-checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 3px 4px rgba(44, 45, 44, 0.35));
+}
+.custom-checkbox:not(:disabled):active+label::before {
+    background-color: #b3d7ff;
+    border-color: #b3d7ff;
+}
+.custom-checkbox:focus:not(:checked)+label::before {
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 3px 4px rgba(44, 45, 44, 0.35));
+}
+
+
+/* *********************** */
+
 /*  Subscription Management  */
 
 .inner__text {
@@ -1103,4 +1176,35 @@ a {
 
 .btn__subscr {
     width: 26.625rem;
+}
+
+/*  Subscription Management finished */
+
+.subscr__text {
+    font-family: 'Helvetica';
+    font-size: 1.5625rem;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    line-height: 1.35em;
+}
+
+.subscr__info {
+    font-family: 'Helvetica';
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    text-transform: none;
+    line-height: 1.35em;
+}
+
+.wrapper__subscr {
+    height: 9.2rem;
+}
+
+.cards__number {
+    font-family: 'Helvetica';
+    font-size: 1rem;
+    line-height: 1.35em;
+    letter-spacing: 0.1em;
+
+
 }
