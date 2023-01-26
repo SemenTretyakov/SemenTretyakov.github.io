@@ -34,7 +34,7 @@
                         <nav class="menu__body w-100 position-absolute">
                             <ul class="menu__list vh-100 d-flex flex-column align-items-center justify-content-center w-100">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="authentication.html" class="menu__link">
                                         Войти / регистрация
                                     </a>
                                 </li>
@@ -166,7 +166,7 @@
                 </div>
                 <div class="push-1a9"></div>
                 <div class="col-lg-3 col-md-6">
-                    <a href="#" class="wrapper wrapper_mini d-block">
+                    <a href="#popup__changing-password" class="wrapper popup-link wrapper_mini d-block">
                         <div class="push-2"></div>
                         <div class="wrapper__title d-flex align-items-center">
                             <img src="/Project/assets/images/password.svg" alt="" class="wrapper__img">
@@ -241,6 +241,80 @@
         </div>
     </footer>
     <div class="push-3"></div>
+
+    <div class="row">
+        <form action="#" class="popup position-fixed" id="popup__changing-password">
+            <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                    <a href="#" class="popup__close close-popup position-absolute">
+                        <img src="/Project/assets/images/cross.svg" alt="close popup">
+                    </a>
+                    <div class="push-2-3"></div>
+                    <div class="form__btns d-flex justify-content-between">
+                        <button class="form__title w-50 p-0 font-weight-normal" type="button">
+                            Регистрация
+                        </button>
+                        <button class="form__title w-50 form__title_active p-0 font-weight-normal" type="button">
+                            Войти
+                        </button>
+                    </div>
+                    <div class="push-2"></div>
+                    <div class="popup__fields">
+                        <div class="form__btns-selection d-flex">
+                            <button class="form__title-selection font-weight-normal w-50 py-3" type="button">
+                                Номер телефона
+                            </button>
+                            <button class="form__title-selection font-weight-normal form__title-selection_active w-50 py-3" type="button">
+                                E-mail
+                            </button>
+                        </div>
+                        <div class="push-1-25"></div>
+                        <div class="fields">
+                            <div class="field">
+                                <h4 class="field__text text-black font-weight-normal">
+                                    E-mail
+                                </h4>
+                                <div class="push-1"></div>
+                                <input placeholder="example@email.ru" type="email" class="input py-3 ps-4 w-100" name="useremail" id="useremail">
+                            </div>
+                            <div class="push-1-25"></div>
+                            <div class="field">
+                                <h4 class="field__text text-black font-weight-normal">
+                                    Пароль
+                                </h4>
+                                <div class="push-1"></div>
+                                <input type="password" class="input input_pass w-100 ps-4" name="userpass" id="userpass">
+                            </div>
+                        </div>
+                        <div class="push-2"></div>
+                        <button class="form__main-btn bg-black text-white d-block text-center w-100 py-3 m-0 text-black" type="button">
+                            Войти
+                        </button>
+                        <div class="push-1"></div>
+                        <a href="#" class="forgotten-pass text-black text-center d-block">
+                            Забыли пароль?
+                        </a>
+                        <div class="push-1-6"></div>
+                        <h3 class="form__subtitle-btns text-black text-center m-0">
+                            или войди с помощью...
+                        </h3>
+                        <div class="push-1-25"></div>
+                        <div class="form__btns d-flex justify-content-between">
+                            <button class="form__title-social form__btn_google py-3 d-flex align-items-center justify-content-center" type="button">
+                                Google
+                            </button>
+                            <button class="form__title-social form__btn_apple py-3 d-flex align-items-center justify-content-center" type="button">
+                                apple
+                            </button>
+                        </div>
+                        <div class="push-2-5"></div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
     <script src="js/main.js"></script>
 </body>
 </html>

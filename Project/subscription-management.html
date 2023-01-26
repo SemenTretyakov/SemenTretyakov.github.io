@@ -34,7 +34,7 @@
                         <nav class="menu__body w-100 position-absolute">
                             <ul class="menu__list vh-100 d-flex flex-column align-items-center justify-content-center w-100">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">
+                                    <a href="authentication.html" class="menu__link">
                                         Войти / регистрация
                                     </a>
                                 </li>
@@ -162,7 +162,7 @@
                         Подписка
                     </h3>
                     <div class="push-2"></div>
-                    <a href="" class="btn btn__section btn__subscr text-white d-block text-uppercase">
+                    <a href="#popup__making-subscription" class="btn btn__section popup-link btn__subscr text-white d-block text-uppercase">
                         активировать подписку
                     </a>
                 </div>
@@ -228,7 +228,80 @@
                 </div>
             </footer>
             <div class="push-3"></div>
+
+            <div class="row">
+                <form action="#" class="popup position-fixed" id="popup__making-subscription">
+                    <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                        <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                            <a href="#" class="popup__close close-popup position-absolute">
+                                <img src="/Project/assets/images/cross.svg" alt="close popup">
+                            </a>
+                            <div class="push-2-3"></div>
+                            <p class="form__title text-center m-0">
+                                Оформление подписки
+                            </p>
+                            <div class="push-2"></div>
+                            <div class="popup__fields">
+                                <div class="fields">
+                                    <div class="field">
+                                        <p class="field__text field__text-card text-black font-weight-normal m-0">
+                                            После оформления данной подписки вы будете иметь доступ к эксклюзивной коллекции фотографий модели Taya Vais.
+                                        </p>
+                                        <div class="push-0-625"></div>
+                                        <p class="field__text field__text-card text-black font-weight-normal m-0">
+                                            Введите данные своей карты. Мы гарантируем безопасность платежей.
+                                        </p>
+                                    </div>
+                                    <div class="push-1"></div>
+                                    <div class="field d-flex align-items-center">
+                                        <img src="/Project/assets/images/master-logo.svg" alt="" class="logo__card">
+                                        <img src="/Project/assets/images/mir-logo.svg" alt="" class="logo__card ms-3">
+                                        <img src="/Project/assets/images/visa-logo.svg" alt="" class="logo__card ms-3">
+                                    </div>
+                                    <div class="push-1-25"></div>
+                                    <div class="field">
+                                        <input placeholder="Номер карты" type="text" class="input py-3 ps-4 w-75" name="usercard" id="usercard">
+                                        <div class="push-1-25"></div>
+                                        <div class="inputs d-flex justify-content-between w-75">
+                                            <input placeholder="Срок действия" type="text" class="input input__cards py-3 ps-4" name="usertel" id="userterm">
+                                            <input placeholder="CVV" type="password" class="input input__cards py-3 ps-4" name="usertel" id="usercvv">
+                                        </div>
+                                    </div>
+                                    <p href="#" class="pass__text pt-3 m-0">
+                                        Даже если срок действия истек
+                                    </p>
+                                    <div class="push-1-25"></div>
+                                    <p class="field__text text-black font-weight-normal m-0 text-end w-75">
+                                        К оплате: 0000 RUB
+                                    </p>
+                                    <div class="push-2-5"></div>
+                                    <a href="#popup__issued-subscription" class="form__main-btn popup-link bg-black text-white d-block text-center w-100 py-3 m-0 text-black font-weight-normal" type="button">
+                                        оформить подписку
+                                    </a>
+                                    <div class="push-2-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </form>
+            </div>
+    
+            <div class="row">
+                <form action="#" class="popup position-fixed" id="popup__issued-subscription">
+                    <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                        <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                            <div class="push-4"></div>
+                            <p class="form__heading text-center m-0 text-black">
+                                Подписка успешно оформлена!
+                            </p>
+                            <div class="push-4"></div>
+                        </div>
+                    </div>   
+                </form>
+            </div>
         </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -358,7 +358,7 @@ a {
 /*  popup  */
 
 .popup {
-    background-color: rgba(16, 16, 16, 0.9);
+    background-color: rgba(9, 9, 9, 0.9);
     top: 0;
     left: 0;
     opacity: 0;
@@ -419,6 +419,10 @@ a {
 
 .btn__popup-content {
     border: 2px solid #000000;
+}
+
+.btn__arrange {
+    width: 17rem;
 }
 
 .btn__popup-content:hover {
@@ -1016,18 +1020,38 @@ a {
     color: #FFFFFF;
 }
 
-.field__title {
+.field__text {
     font-family: 'Helvetica';
     font-style: normal;
     font-size: 1.25rem;
     letter-spacing: 0.02em;
     color: rgba(0, 0, 0, 0.8);
     text-transform: none;
+    line-height: 1.35em;
 }
 
 .input {
     background: #F3F3F3;
     height: 4.0625rem;
+}
+
+/* .input__pass::after {
+    content: "";
+    display: block;
+    background: url(../assets/images/eyes.svg);
+    width: 22px;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+.input__cards {
+    width: 45%;
+}
+
+.field__text-card {
+    width: 80%;
 }
 
 ::-webkit-input-placeholder {font-size: 1.25rem;}
@@ -1040,7 +1064,7 @@ a {
     font-size: 1rem;
     letter-spacing: 0.02em;
     text-transform: uppercase;
-    line-height: 1.3em;
+    line-height: 1.45em;
     height: 3.5rem;
 }
 
@@ -1211,3 +1235,9 @@ a {
     background-color: rgb(255, 255, 255, 0);
 }
 
+.form__heading {
+    font-family: 'Helvetica';
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
