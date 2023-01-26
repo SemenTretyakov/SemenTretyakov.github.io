@@ -965,7 +965,7 @@ a {
 
 /*  Popup login  */
 
-.form__btn {
+.form__title {
     font-family: 'Helvetica';
     font-size: 1.375rem;
     letter-spacing: 0.02em;
@@ -973,14 +973,14 @@ a {
     color: #000000;
 }
 
-.form__btn:after {
+.form__title:after {
     content: "";
     display: block;
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
     margin-top: 1.375rem;
 }
 
-.form__btn_active:after {
+.form__title_active:after {
     border-bottom: 1px solid #000000;
 }
 
@@ -996,7 +996,7 @@ a {
     padding: 0rem 4.625rem;
 }
 
-.form__btn-selection {
+.form__title-selection {
     font-style: normal;
     font-family: 'Helvetica';
     font-size: 0.9375rem;
@@ -1011,7 +1011,7 @@ a {
     padding: 0rem 3.125rem;
 }
 
-.form__btn-selection_active {
+.form__title-selection_active {
     background-color: #000000;
     color: #FFFFFF;
 }
@@ -1060,7 +1060,7 @@ a {
     text-transform: uppercase;
 }
 
-.form__btn-social {
+.form__title-social {
     border: 1px solid #323232;
     text-transform: uppercase;
     font-family: 'Helvetica';
@@ -1205,6 +1205,9 @@ a {
     font-size: 1rem;
     line-height: 1.35em;
     letter-spacing: 0.1em;
-
-
 }
+
+.popup__authentication {
+    background-color: rgb(255, 255, 255, 0);
+}
+
