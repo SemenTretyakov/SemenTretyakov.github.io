@@ -129,7 +129,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-12 d-block">
-                    <div class="inner d-flex ms-5">
+                    <div class="inner d-flex">
                         <div class="column-titles">
                             <p class="inner__text">
                                 Cтатус подписки
@@ -157,7 +157,7 @@
             </div>
             <div class="push-4"></div>
             <div class="row">
-                <div class="col-5">
+                <div class="col-lg-5 col-md-12">
                     <h3 class="secondary-title font-weight-normal">
                         Подписка
                     </h3>
@@ -177,9 +177,13 @@
                                 Следующий платеж 27.02.2023
                             </p>
                         </a>
+                        <div class="push-05"></div>
+                        <a href="#popup__cancel-subscription" class="wrapper__text_action popup-link d-block text-end">
+                            Отменить подписку
+                        </a>
                     </div>
                 </div>
-                <div class="col-5 ms-5">
+                <div class="col-lg-5 col-md-12">
                     <h3 class="secondary-title font-weight-normal">
                         Карта
                     </h3>
@@ -195,6 +199,10 @@
                                 </p>
                                 <img src="/Project/assets/images/mastercard.svg" alt="" class="cards__img me-4">
                             </div>
+                        </a>
+                        <div class="push-05"></div>
+                        <a href="#" class="wrapper__text_action d-block text-end">
+                            Изменить
                         </a>
                     </div>
                 </div>
@@ -241,7 +249,7 @@
                                     </li>
                                     <li class="footer__item">
                                         <div class="push-0-625"></div>
-                                        <a href="#" class="footer__link">
+                                        <a href="#popup__refund-funds" class="footer__link popup-link">
                                             Возврат средств
                                         </a>
                                     </li>
@@ -260,7 +268,143 @@
                 </div>
             </footer>
             <div class="push-3"></div>
+
+            <div class="row">
+                <form action="#" class="popup position-fixed" id="popup__cancel-subscription">
+                    <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                        <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                            <a href="#" class="popup__close close-popup position-absolute">
+                                <img src="/Project/assets/images/cross.svg" alt="close popup">
+                            </a>
+                            <div class="push-2-3"></div>
+                            <p class="form__title text-center m-0">
+                                отменить подписку
+                            </p>
+                            <div class="push-2"></div>
+                            <div class="popup__fields">
+                                <div class="fields">
+                                    <div class="field">
+                                        <p class="field__text text-black font-weight-normal m-0 w-75">
+                                            Введите e-mail или номер телефона, указанный при регистрации. 
+                                        </p>
+                                    </div>
+                                    <div class="push-1"></div>
+                                    <div class="field">
+                                        <input type="password" class="input py-3 ps-4 w-100" name="userpass" id="userpass">
+                                    </div>
+                                    <div class="push-2-5"></div>
+                                    <a href="#popup__closed-subscription" class="form__main-btn popup-link bg-black text-white d-block text-center w-100 py-3 m-0 text-black font-weight-normal" type="button">
+                                        отменить подписку
+                                    </a>
+                                    <div class="push-2-5"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>   
+                </form>
+            </div>
+    
+            <div class="row">
+                <form action="#" class="popup position-fixed" id="popup__closed-subscription">
+                    <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                        <div class="col-xl-8 col-md-10 popup__content form__content position-relative bg-white">
+                            <div class="push-4"></div>
+                            <p class="form__heading text-center m-0 text-black">
+                                Подписка отменена!
+                            </p>
+                            <div class="push-4"></div>
+                        </div>
+                    </div>   
+                </form>
+            </div>
+
+            <div class="row">
+                <form action="#" class="popup position-fixed" id="popup__issued-subscription">
+                    <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                        <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                            <div class="push-4"></div>
+                            <p class="form__heading text-center m-0 text-black">
+                                Подписка успешно оформлена!
+                            </p>
+                            <div class="push-4"></div>
+                        </div>
+                    </div>   
+                </form>
+            </div>
         </div>
+        <div class="row">
+            <form action="#" class="popup position-fixed" id="popup__refund-funds">
+                <div class="popup__body vh-100 d-flex align-items-center justify-content-center">
+                    <div class="col-xl-8 col-lg-9 popup__content form__content position-relative bg-white">
+                        <a href="#" class="popup__close close-popup position-absolute">
+                            <img src="/Project/assets/images/cross.svg" alt="close popup">
+                        </a>
+                        <div class="push-2-3"></div>
+                        <p class="form__title text-center m-0">
+                            Возврат стредств
+                        </p>
+                        <div class="push-2"></div>
+                        <div class="popup__fields">
+                            <div class="fields">
+                                <div class="field">
+                                    <h4 class="field__text text-black font-weight-normal">
+                                        ФИО
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="type" class="input py-3 ps-4 w-100" name="userinfo" id="userinfo">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__text text-black font-weight-normal">
+                                        Первые 6 цифр карты
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="text" class="input input_pass w-100 ps-4" name="usercard" id="usercard">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__text text-black font-weight-normal">
+                                        Последние 4 цифры карты
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="text" class="input py-3 ps-4 w-100" name="usercard" id="usercard">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 placeholder="день/месяц/год" class="field__text text-black font-weight-normal">
+                                        Дата транзакции
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="text" class="input py-3 ps-4 w-100" name="usercard" id="usercard">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 placeholder="example@email.ru" class="field__text text-black font-weight-normal">
+                                        E-mail
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="email" class="input py-3 ps-4 w-100" name="usermeail" id="usermeail">
+                                </div>
+                                <div class="push-1-25"></div>
+                                <div class="field">
+                                    <h4 class="field__text text-black font-weight-normal">
+                                        Причина возврата
+                                    </h4>
+                                    <div class="push-1"></div>
+                                    <input type="text" class="input py-3 ps-4 w-100" name="userdesc" id="userdesc">
+                                </div>
+                            </div>
+                            <div class="push-2-5"></div>
+                            <a href="#popup__issued-changingpass" class="form__main-btn popup-link bg-black text-white d-block text-center w-100 py-3 m-0 text-black" type="button">
+                                отправить
+                            </a>
+                            <div class="push-2-5"></div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>   
     <script src="js/main.js"></script>
 </body>
 </html>
