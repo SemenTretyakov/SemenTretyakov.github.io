@@ -562,13 +562,13 @@ a {
 
 .offer__title {
     font-family: 'Century Gothic';
-    font-weight: 400;
+    font-weight: normal;
     font-size: 6.25rem;
 }
 
 .offer__link {
     font-family: 'Helvetica';
-    font-weight: 400;
+    font-weight: normal;
     font-size: 2.4375rem;
     line-height: 1.2em;
     transition: all 0.5s ease;
@@ -671,12 +671,15 @@ a {
     .section-title {
         font-size: 3.6rem;
     }
-    .gallery-blok:nth-of-type(2n+1) {
+    .gallery-blok:nth-child(2n+1) {
         margin-bottom: 2rem;
     }
     .hover-image-scale:hover::after {
         bottom: 11%;
         right: 15%;
+    }
+    .push-2-85 {
+        height: 0.85rem;
     }
 } 
 
@@ -697,7 +700,7 @@ a {
         height: 14rem;
     }
     .hover-image-scale:hover::after {
-        bottom: 9%;
+        bottom: 12%;
         right: 15%;
     }
     .btn__section {
@@ -708,7 +711,7 @@ a {
         font-size: 1rem;
     }
     .push-2-85 {
-        height: 2rem;
+        height: 0.5rem;
     }
 }
 
@@ -716,6 +719,12 @@ a {
     .hover-image-scale {
         width: 65%;
         margin: 0 auto!important;
+    }
+    .hover-image-scale:hover::after {
+        bottom: 11%;
+    }
+    .push-2-85 {
+        height: 0rem;
     }
 }
 
@@ -740,6 +749,9 @@ a {
     }
     .section-title {
         font-size: 3.2rem;
+    }
+    .hover-image-scale:hover::after {
+        bottom: 9.5%;
     }
 }
 
@@ -799,13 +811,12 @@ a {
         font-size: 2.8rem;
     }
     .offer__link {
-        font-size: 1.01rem;
+        font-size: 1rem;
     }     
 }
 /*  about us  */
 
 .header__about {
-    height: 100vh;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), radial-gradient(85.29% 85.29% at 50.04% 50%, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%), url(../assets/images/about-bg.png) no-repeat top center / cover;
 }
 
@@ -846,6 +857,9 @@ a {
         border-top: 6px solid #ffffff;
         margin: 1.5625rem 0;
     }
+    .offer__title-about {
+        font-size: 5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -854,6 +868,9 @@ a {
     }
     .about__text::before {
         border-top: 0.25rem solid #ffffff;
+    }
+    .offer__title-about {
+        font-size: 4.5rem;
     }
 }
 
@@ -865,7 +882,12 @@ a {
         border-top: 4px solid #ffffff;
         margin: 1rem 0;
     }
+    .offer__title-about {
+        font-size: 4rem;
+    }
 }
+
+/* ************** */
 
 /*  account  */
 
@@ -971,6 +993,7 @@ a {
 }
 
 /*  Responive account  */
+
 @media (max-width: 1200px) {
 	.wrapper__edit {
         margin-left: 2rem;
@@ -1277,6 +1300,14 @@ a {
     .form__title_active::before {
         left: -9%;
     }
+    .form__main-btn {
+        height: 3.5rem;
+        line-height: 1.5em;
+    }
+    .form__main-btn:hover{
+        height: 3.5rem;
+        line-height: 1.5em;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1286,6 +1317,10 @@ a {
     .form__title_active::before {
         left: -12%;
     }
+    .form__title { 
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1294,23 +1329,44 @@ a {
     }
     .form__title-social {
         font-size: 1rem;
+        height: 3rem;
     }
-    .form__title {
-        font-size: 1.1rem;
+    .form__title_reg {
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    .form__title_enter {
+        font-size: 1rem;
+        padding: 1rem 0;
     }
     .form__title_active::before {
         display: none;
     }
     .form__subtitle-btns {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    .form__main-btn {
+        height: 3rem;
+        line-height: 1em;
+    }
+    .form__main-btn:hover{
+        height: 3rem;
+        line-height: 1em;
+    }
+    .push-2-3 {
+        display: none;
+    }
+    .push-1-6 {
+        height: 1rem;
     }
 }
 
 @media (max-width: 350px) {
     .form__title {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
+
 /* *********************** */
 
 /*  Popup registration  */
@@ -1458,9 +1514,6 @@ a {
     .push-2-5 {
         height: 2rem;
     }
-    .pass__text {
-        width: 50%;
-    }
     .popup__close {
         right: 1.5rem;
         top: 1.5rem;
@@ -1483,10 +1536,6 @@ a {
 }
 
 @media (max-width: 460px) {
-    .form__title {
-        font-size: 1.1rem;
-        padding-bottom: 1.1rem;
-    }
     .field__text {
         font-size: 1.2rem;
     }
@@ -1537,9 +1586,6 @@ a {
     }
     .field__text {
         font-size: 1rem;
-    }
-    .form__title {
-        padding-top: 1.5em;
     }
     .push-2 {
         height: 1rem;
